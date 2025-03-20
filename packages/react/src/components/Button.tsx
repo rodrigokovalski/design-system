@@ -93,3 +93,5 @@ export interface ButtonProps extends ComponentProps<typeof Button>, React.Button
     variant: "primary" | "secondary" | "tertiary",
     size?: "sm" | "md"
 }
+
+Button.displayName = 'Button'
