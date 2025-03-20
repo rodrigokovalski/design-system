@@ -1,3 +1,4 @@
+// @ts-ignore
 import '../styles/tokens-grid.css';
 
 interface TokensGridProps {
