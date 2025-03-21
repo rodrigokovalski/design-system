@@ -5,10 +5,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "storybook dev -p 6006",
-    "build": "storybook build",
-    "lint": "eslint .",
-    "deploy-storybook": "storybook-to-ghpages"
+    "build-vite": "tsc && vite build",
+    "build": "storybook build"
   },
   "dependencies": {
     "@rodrigokovalski/eslint-config": "*",
