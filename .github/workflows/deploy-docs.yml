@@ -5,23 +5,12 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write  # Alterado para 'write' para permitir push
-  pages: write
-  id-token: write
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Ensure gh-pages branch exists
-        run: |
-          git fetch origin gh-pages || true
-          git checkout gh-pages || git checkout --orphan gh-pages
-          git push origin gh-pages
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,4 +25,4 @@ jobs:
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
