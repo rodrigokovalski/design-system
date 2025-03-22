@@ -1,4 +1,4 @@
-import { colors } from "@rodrigokovalski/tokens";
+import { colors } from "@rodrigokovalski-ui/tokens";
 import { getContrast } from "polished";
 
 export function ColorsGrid() {

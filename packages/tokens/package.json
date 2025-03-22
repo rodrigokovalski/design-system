@@ -1,5 +1,5 @@
 {
-  "name": "@rodrigokovalski/tokens",
+  "name": "@rodrigokovalski-ui/tokens",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -14,8 +14,8 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@rodrigokovalski/ts-config": "*",
-    "@rodrigokovalski/eslint-config": "*",
+    "@rodrigokovalski-ui/ts-config": "*",
+    "@rodrigokovalski-ui/eslint-config": "*",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   }

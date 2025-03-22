@@ -8,6 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@rodrigokovalski/docs"
+    "@rodrigokovalski-ui/docs"
   ]
 }

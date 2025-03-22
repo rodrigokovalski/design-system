@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
-import { Box, BoxProps, Text } from '@rodrigokovalski/react';
+import { Box, BoxProps, Text } from '@rodrigokovalski-ui/react';
 
 export default {
     title: 'Form/Box',
